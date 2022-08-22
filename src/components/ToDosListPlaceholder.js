@@ -9,6 +9,8 @@ class ToDosListPlaceholder extends React.Component {
           <TodoItem
             key={item.id}
             item={item}
+            checkBoxToggleProps={this.props.checkBoxToggleProps}
+            deleteItemProps={this.props.deleteItemProps}
           />
         ))}
       </ul>
